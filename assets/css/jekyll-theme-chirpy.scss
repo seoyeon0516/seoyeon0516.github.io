@@ -8,6 +8,7 @@
 {%- endif -%}
 ';
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Quicksand:wght@300..700&display=swap');
 /* append your custom style below */
 
 /* Light mode background */
@@ -25,4 +26,64 @@ html[data-mode='dark'] {
   --sidebar-bg: #171412;
   --topbar-bg: rgb(31 27 24 / 70%);
   --card-bg: #25211e;
+}
+
+body {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+/* Sidebar menu color customization */
+/* 1. 기본 메뉴 글씨색 */
+#sidebar .nav-item .nav-link {
+  color: #7a8fa6;
+}
+
+/* 2. 기본 메뉴 아이콘색 */
+#sidebar .nav-item .nav-link i {
+  color: #7a8fa6;
+}
+
+/* 3. 메뉴에 마우스를 올렸을 때 */
+#sidebar .nav-item .nav-link:hover {
+  color: #4a7a9b;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 4. 선택된 메뉴의 배경색과 글씨색 */
+#sidebar .nav-item .nav-link.active {
+  color: #2d6a8f;
+  background-color: #b8d8ef !important;
+}
+
+/* 5. 선택된 메뉴의 아이콘색 */
+#sidebar .nav-item .nav-link.active i {
+  color: #2d6a8f;
+}
+
+/* Sidebar bottom icon color customization */
+/* 다크모드, GitHub, Email 등 사이드바 하단 아이콘 색상 설정 */
+
+/* 기본 상태: 하단 링크/버튼 색상 */
+#sidebar .sidebar-bottom a,
+#sidebar .sidebar-bottom button {
+  color: #7a8fa6;
+}
+
+/* 기본 상태: 내부 아이콘 색상 */
+#sidebar .sidebar-bottom a i,
+#sidebar .sidebar-bottom button i {
+  color: #7a8fa6;
+}
+
+/* hover 상태: 마우스를 올렸을 때 링크/버튼 색상과 배경색 */
+#sidebar .sidebar-bottom a:hover,
+#sidebar .sidebar-bottom button:hover {
+  color: #2d6a8f;
+  background-color: #b8d8ef;
+}
+
+/* hover 상태: 내부 아이콘 색상 */
+#sidebar .sidebar-bottom a:hover i,
+#sidebar .sidebar-bottom button:hover i {
+  color: #2d6a8f;
 }
