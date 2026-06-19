@@ -1,5 +1,5 @@
 ---
-title: "[코딩 자율학습 스프링 부트 3 자바 백엔드 개발 입문]6장 게시판 내 페이지 이동하기"
+title: "[코딩 자율학습 스프링 부트 3 자바 백엔드 개발 입문] 6장 게시판 내 페이지 이동하기"
 date: 2026-06-19 20:00:00 +0900
 categories: [Study, Backend]
 tags: [spring-boot, backend]
