@@ -8,7 +8,35 @@
 {%- endif -%}
 ';
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* Global font customization */
+body,
+#main-wrapper,
+#main,
+#content,
+#post-wrapper,
+.post,
+.post-content,
+.post-content p,
+.post-content li,
+.post-content table,
+.post-content blockquote,
+.post-tail-wrapper,
+.post-meta,
+.post-preview,
+.page-content,
+#sidebar {
+  font-family: 'Nanum Gothic', sans-serif !important;
+}
+
+/* Keep code block font as monospace */
+code,
+pre,
+.highlight,
+.highlight code {
+  font-family: monospace !important;
+}
+
 /* append your custom style below */
 
 /* Light mode background */
@@ -26,10 +54,6 @@ html[data-mode='dark'] {
   --sidebar-bg: #171412;
   --topbar-bg: rgb(31 27 24 / 70%);
   --card-bg: #25211e;
-}
-
-body {
-  font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 /* Sidebar menu color customization */
@@ -86,4 +110,16 @@ body {
 #sidebar .sidebar-bottom a:hover i,
 #sidebar .sidebar-bottom button:hover i {
   color: #2d6a8f;
+}
+
+/* Post title font weight */
+main h1,
+h1[data-toc-skip] {
+  font-weight: 800 !important;
+}
+
+/* Post content headings */
+.post-content h2,
+.post-content h3 {
+  font-weight: 700 !important;
 }
