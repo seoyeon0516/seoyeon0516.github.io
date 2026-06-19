@@ -1,0 +1,28 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+.bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Light mode background */
+html[data-mode='light'],
+html:not([data-mode]) {
+  --main-bg: #f0f2f5;
+  --sidebar-bg: #E8F1FA;
+  --topbar-bg: #f0f2f5;
+  --card-bg: #ffffff;
+}
+
+/* Dark mode background */
+html[data-mode='dark'] {
+  --main-bg: #1f1b18;
+  --sidebar-bg: #171412;
+  --topbar-bg: rgb(31 27 24 / 70%);
+  --card-bg: #25211e;
+}
