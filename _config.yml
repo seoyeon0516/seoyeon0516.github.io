@@ -19,7 +19,7 @@ title: 고독한 개발자 # the main title
 tagline: 얼레벌레 굴러가는 개발자 지망생 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  개발 공부와 프로젝트 경험을 얼레벌레, 하지만 꾸준히 기록하는 개인 기술 블로그
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
