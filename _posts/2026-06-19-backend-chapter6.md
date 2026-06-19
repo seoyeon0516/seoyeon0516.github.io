@@ -37,6 +37,7 @@ HTML의 `<a>` 태그 혹은 `<form>` 태그로 작성하며, 클라이언트가 
 
 `src > main > resources > templates > articles > index.mustache` 에 다음 코드를 작성한다.
 
+{% raw %}
 ```html
 </table>
 
@@ -44,14 +45,15 @@ HTML의 `<a>` 태그 혹은 `<form>` 태그로 작성하며, 클라이언트가 
 
 {{>layouts/footer}}
 ```
+{% endraw %}
 
 ## `<입력 페이지>` → `<목록 페이지>` 돌아가기
 
 입력 페이지의 뷰 파일인 new.mustache를 열어 코드의 [Submit] 버튼 아래에 링크를 추가한다.
 
 ```html
-<button type="submit" class="btn btn-primary">Submit</button>
-<a href="/articles">Back</a>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/articles">Back</a>
 </form>
 ```
 
@@ -120,6 +122,7 @@ public String show(@PathVariable Long id, Model model) {
 
 따라서 show.mustache 파일에 링크를 추가하면 된다.
 
+{% raw %}
 ```html
 </table>
 
@@ -127,6 +130,7 @@ public String show(@PathVariable Long id, Model model) {
 
 {{>layouts/footer}}
 ```
+{% endraw %}
 
 ## `<목록 페이지>` → `<상세 페이지>` 이동하기
 
@@ -134,12 +138,14 @@ public String show(@PathVariable Long id, Model model) {
 
 목록 페이지의 뷰 파일인 index.mustache 에서 게시글 제목에다가 링크를 걸어준다.
 
+{% raw %}
 ```html
 {{#articleList}}
-<tr>
+<tr>ㅜ
     <th>{{id}}</th>
     <td><a href="/articles/{{id}}">{{title}}</a></td>
     <td>{{content}}</td>
 </tr>
 {{/articleList}}
 ```
+{% endraw %}
