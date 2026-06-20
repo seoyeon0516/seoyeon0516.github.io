@@ -40,47 +40,38 @@ pre,
 /* append your custom style below */
 
 /* Light mode background */
-html[data-mode='light'],
-html:not([data-mode]) {
+html[data-mode='light'] {
   --main-bg: #f0f2f5;
   --sidebar-bg: #E8F1FA;
   --topbar-bg: #f0f2f5;
   --card-bg: #ffffff;
 }
 
-/* Dark mode background */
-html[data-mode='dark'] {
-  --main-bg: #1f1b18;
-  --sidebar-bg: #171412;
-  --topbar-bg: rgb(31 27 24 / 70%);
-  --card-bg: #25211e;
-}
-
 /* Sidebar menu color customization */
 /* 1. 기본 메뉴 글씨색 */
-#sidebar .nav-item .nav-link {
+html[data-mode='light'] #sidebar .nav-item .nav-link {
   color: #7a8fa6;
 }
 
 /* 2. 기본 메뉴 아이콘색 */
-#sidebar .nav-item .nav-link i {
+html[data-mode='light'] #sidebar .nav-item .nav-link i {
   color: #7a8fa6;
 }
 
 /* 3. 메뉴에 마우스를 올렸을 때 */
-#sidebar .nav-item .nav-link:hover {
+html[data-mode='light'] #sidebar .nav-item .nav-link:hover {
   color: #4a7a9b;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* 4. 선택된 메뉴의 배경색과 글씨색 */
-#sidebar .nav-item .nav-link.active {
+html[data-mode='light'] #sidebar .nav-item .nav-link.active {
   color: #2d6a8f;
   background-color: #b8d8ef !important;
 }
 
 /* 5. 선택된 메뉴의 아이콘색 */
-#sidebar .nav-item .nav-link.active i {
+html[data-mode='light'] #sidebar .nav-item .nav-link.active i {
   color: #2d6a8f;
 }
 
