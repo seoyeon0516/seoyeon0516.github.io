@@ -1,6 +1,6 @@
 ---
 title: "[캡스톤디자인] Flutter로 AI 헬스케어 서비스 MVP 화면 설계하기: On-Care 프론트엔드 구현 기록"
-date: 2026-06-19 20:00:00 +0900
+date: 2026-06-22 20:00:00 +0900
 categories: [Project, Capstone]
 tags: [flutter, dart, frontend, mvp, uiux, healthcare, capstone-design]
 description: On-Care 캡스톤디자인 프로젝트에서 Flutter 기반 프론트엔드 MVP를 구현하며 사용자 흐름, 기능별 화면 구조, 디자인 시스템, API 연동 우선순위를 고민한 기록
