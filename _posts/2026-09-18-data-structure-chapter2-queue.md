@@ -192,7 +192,7 @@ front = (front + 1) % capacity
 
 후단 회전(시계 방향) : `rear = (rear - 1 + capacity) % capacity` 
 
-> 💡 (+ capacity)를 먼저 하는 이유는 음수 인덱스를 피하면서 원형으로 회전시키기 위함
+> (+ capacity)를 먼저 하는 이유는 음수 인덱스를 피하면서 원형으로 회전시키기 위함
 {: .prompt-info }
 
 ## 4. 상속을 이용한 덱의 구현
