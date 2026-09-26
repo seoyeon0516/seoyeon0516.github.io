@@ -92,7 +92,11 @@ h1[data-toc-skip] {
 }
 
 /* Post content headings */
-.post-content h2,
-.post-content h3 {
+.content h2,
+.content h3 {
+  font-weight: 800 !important;
+}
+
+.content h4 {
   font-weight: 700 !important;
 }
