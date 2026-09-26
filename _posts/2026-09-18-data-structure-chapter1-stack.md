@@ -12,6 +12,7 @@ math: true
 스택(stack)은 **후입선출(LIFO: Last-in First-Out)** 자료구조이다. ex) 웹 브라우저의 이전 페이지로 이동
 
 ![스택의 구조](/assets/img/posts/stack-chapter1/stack-structure.png)
+{: .study-diagram }
 
 ### 추상 자료형
 
@@ -39,6 +40,7 @@ math: true
 - size() : 스택에 들어있는 전체 요소의 수를 반환
 
 ![스택의 일련의 연산](/assets/img/posts/stack-chapter1/stack-operations.png)
+{: .study-diagram }
 
 **오버플로(overflow)**는 포화 상태인 스택에 새로운 요소를 삽입하는 경우 발생하는 오류이다.
 
@@ -59,6 +61,7 @@ math: true
 top : 상단 요소의 위치(변수, 인덱스 저장)
 
 ![배열을 이용한 스택의 구조](/assets/img/posts/stack-chapter1/array-stack-structure.png)
+{: .study-diagram }
 
 ```python
 capacity = 10
@@ -315,6 +318,7 @@ s = queue.LifoQueue(maxsize=20)  # maxsize=0 이면 용량제한 없음
 시스템 스택도 LIFO로 동작한다.
 
 ![함수 호출과 반환 과정의 시스템 스택 변화](/assets/img/posts/stack-chapter1/system-stack.png)
+{: .study-diagram }
 
 ### 순환이란?
 
@@ -360,6 +364,7 @@ def factiorial(n):
 하노이의 탑은 재귀의 대표적인 예다.
 
 ![하노이의 탑 문제](/assets/img/posts/stack-chapter1/hanoi-tower.png)
+{: .study-diagram }
 
 n개의 원판을 A에서 C로 옮기려면 다음과 같이 나눈다.
 

@@ -17,6 +17,7 @@ front : 전단, 삭제 쪽
 rear : 후단, 삽입 쪽
 
 ![큐의 구조](/assets/img/posts/queue-chapter2/queue-structure.png)
+{: .study-diagram }
 
 **큐가 필요한 이유**
 
@@ -52,6 +53,7 @@ rear : 후단, 삽입 쪽
 이 방식이 **선형 큐(linear queue)**이며 요소 이동이 필요해서 비효율적이다.
 
 ![선형 큐의 문제점: 요소들을 앞으로 이동해야 새 요소를 삽입할 수 있음](/assets/img/posts/queue-chapter2/linear-queue-problem.png)
+{: .study-diagram }
 
 ### 원형 큐
 

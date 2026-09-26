@@ -100,3 +100,19 @@ h1[data-toc-skip] {
 .content h4 {
   font-weight: 700 !important;
 }
+
+/* Study post diagrams */
+.content img.study-diagram {
+  display: block;
+  width: 85%;
+  max-width: 760px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 576px) {
+  .content img.study-diagram {
+    width: 100%;
+  }
+}

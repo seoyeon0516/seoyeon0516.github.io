@@ -15,16 +15,19 @@ description: 리스트의 개념과 배열 및 연결 구조, 단순·원형·�
 리스트의 각 요소는 **순서 또는 위치(position)**를 가지며, 요소들 사이에 빈 위치 없이 순서대로 나열된다.
 
 ![리스트 요소의 위치](/assets/img/posts/list-chapter3/list-positions.png)
+{: .study-diagram }
 
 리스트의 가장 큰 특징은 **어떤 위치에서도 요소를 삽입하거나 삭제할 수 있다는 것**이다.
 
 예를 들어, `[A, B]`에서 위치 1에 C를 삽입하면 B가 뒤로 밀려 `[A, C, B]`가 된다.
 
 ![리스트 중간 삽입](/assets/img/posts/list-chapter3/list-insertion.png)
+{: .study-diagram }
 
 반대로 위치 0의 A를 삭제하면 뒤의 요소들이 앞으로 이동하여 `[C, B]`가 된다.
 
 ![리스트 요소 삭제](/assets/img/posts/list-chapter3/array-list-deletion.png)
+{: .study-diagram }
 
 
 
@@ -102,6 +105,7 @@ description: 리스트의 개념과 배열 및 연결 구조, 단순·원형·�
 대신 각각의 요소가 **다른 요소를 가리키는 링크(link)**를 가지도록 한다.
 
 ![연결된 구조](/assets/img/posts/list-chapter3/linked-structure.png)
+{: .study-diagram }
 
 이처럼 메모리에 흩어진 요소를 링크를 통해 연결하여 관리하는 방식을 **연결된 구조(linked structure)**라고 한다.
 
@@ -135,6 +139,7 @@ description: 리스트의 개념과 배열 및 연결 구조, 단순·원형·�
 따라서 k번째 요소를 찾으려면 시작 노드부터 링크를 따라 이동해야 한다.
 
 ![연결 리스트 요소 접근](/assets/img/posts/list-chapter3/linked-list-traversal.png)
+{: .study-diagram }
 
 30를 찾으려면 10 → 20 → 30 순서로 이동해야 한다.
 
@@ -179,6 +184,7 @@ description: 리스트의 개념과 배열 및 연결 구조, 단순·원형·�
 반면 연결 리스트에서는 삽입할 위치의 바로 앞 노드를 알고 있다면 **링크만 수정하면 된다.**
 
 ![연결 리스트 노드 삽입](/assets/img/posts/list-chapter3/linked-list-insertion.png)
+{: .study-diagram }
 
 다른 노드들은 이동할 필요가 없다.
 
@@ -199,6 +205,7 @@ description: 리스트의 개념과 배열 및 연결 구조, 단순·원형·�
 반면 연결 리스트에서는 삭제할 노드 바로 앞 노드의 링크를 수정하면 된다.
 
 ![연결 리스트 노드 삭제](/assets/img/posts/list-chapter3/linked-list-deletion.png)
+{: .study-diagram }
 
 따라서 책에서는 **삽입·삭제할 위치 바로 앞의 노드를 알고 있다면 연결 구조가 훨씬 효율적**이라고 설명한다.
 
@@ -276,6 +283,7 @@ Python 코테에서는 배열 기반 리스트가 필요하다면 대부분 직�
 를 가진다.
 
 ![노드의 데이터와 링크](/assets/img/posts/list-chapter3/node-structure.png)
+{: .study-diagram }
 
 `data`는 실제 저장할 자료이고, `link`는 다른 노드를 가리킨다.
 
@@ -290,6 +298,7 @@ Python 코테에서는 배열 기반 리스트가 필요하다면 대부분 직�
 첫 번째 노드를 **머리 노드(head node)**라고 하고, 머리 노드의 주소를 저장하는 변수를 **헤드 포인터(head pointer)**라고 한다.
 
 ![연결 리스트의 헤드 포인터와 꼬리 노드](/assets/img/posts/list-chapter3/head-pointer.png)
+{: .study-diagram }
 
 마지막 노드는 **꼬리 노드(tail node)**라고 한다.
 
@@ -324,6 +333,7 @@ C/C++에서는 일반 변수와 주소를 저장하는 포인터를 구분한다
 꼬리 노드가 `None`을 가리키는 대신 **다시 머리 노드를 가리키도록 만든 구조**이다.
 
 ![원형 연결 리스트](/assets/img/posts/list-chapter3/circular-linked-list.png)
+{: .study-diagram }
 
 어떤 노드에서 시작하더라도 모든 노드에 접근할 수 있다는 특징이 있다.
 
@@ -339,6 +349,7 @@ C/C++에서는 일반 변수와 주소를 저장하는 포인터를 구분한다
 - 다음 노드(next node)
 
 ![이중 연결 리스트](/assets/img/posts/list-chapter3/doubly-linked-list.png)
+{: .study-diagram }
 
 따라서 앞쪽과 뒤쪽으로 모두 이동할 수 있다.
 
@@ -451,6 +462,7 @@ class LinkedList:
 배열에서는 `A[pos]`로 바로 접근할 수 있지만 연결 리스트에서는 불가능하다.
 
 ![링크를 따라 pos 위치의 노드 탐색](/assets/img/posts/list-chapter3/get-node-traversal.png)
+{: .study-diagram }
 
 `getNode(2)`라면
 
@@ -608,6 +620,7 @@ LinkedList
 이중 연결 리스트의 노드는 다음 세 가지 정보를 가진다.
 
 ![이중 연결 리스트의 노드 구조](/assets/img/posts/list-chapter3/dnode-structure.png)
+{: .study-diagram }
 
 - `data` : 데이터
 - `prev` : 이전 노드
@@ -634,8 +647,10 @@ class DNode:
 A와 B 사이에 X를 넣는다면
 
 ![이중 연결된 두 노드](/assets/img/posts/list-chapter3/doubly-linked-nodes.png)
+{: .study-diagram }
 
 ![이중 연결 리스트 노드 삽입 전](/assets/img/posts/list-chapter3/dnode-insertion-before.png)
+{: .study-diagram }
 
 가 되어야 한다.
 
@@ -655,6 +670,7 @@ A와 B 사이에 X를 넣는다면
 삭제 역시 앞뒤 링크를 모두 수정해야 한다.
 
 ![이중 연결 리스트 노드 삽입 후](/assets/img/posts/list-chapter3/dnode-insertion-after.png)
+{: .study-diagram }
 
 따라서
 
@@ -694,6 +710,7 @@ A와 B 사이에 X를 넣는다면
 삭제 역시 단순 연결 리스트와 유사하지만, 머리 노드를 삭제한다면 새로운 머리 노드의 `prev`도 반드시 `None`으로 만들어야 한다.
 
 ![이중 연결 리스트 노드 삭제](/assets/img/posts/list-chapter3/dnode-deletion.png)
+{: .study-diagram }
 
 책에서는 `DNode`의 `append()`와 `popNext()`를 먼저 수정한 뒤 이를 이용하여 `DblLinkedList`의 삽입·삭제를 구현한다.
 
