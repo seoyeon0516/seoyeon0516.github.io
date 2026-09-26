@@ -1,5 +1,5 @@
 ---
-title: "[자료구조와 알고리즘 with 파이썬] Chapter 02 큐"
+title: "Chapter 02 큐"
 date: 2026-09-18 00:00:00 +0900
 categories: [Study, Data Structure]
 tags: [data-structure, queue, deque, python]

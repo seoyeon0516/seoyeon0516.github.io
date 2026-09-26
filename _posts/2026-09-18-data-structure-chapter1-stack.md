@@ -1,5 +1,5 @@
 ---
-title: "[자료구조와 알고리즘 with 파이썬] Chapter 01 스택"
+title: "Chapter 01 스택"
 date: 2026-09-18 00:00:00 +0900
 categories: [Study, Data Structure]
 tags: [data-structure, stack, python, recursion]
