@@ -102,17 +102,20 @@ h1[data-toc-skip] {
 }
 
 /* Study post diagrams */
-.content img.study-diagram {
-  display: block;
+.content p.study-diagram {
   width: 85%;
   max-width: 760px;
-  height: auto;
   margin-right: auto;
   margin-left: auto;
 }
 
+.content p.study-diagram img {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 576px) {
-  .content img.study-diagram {
+  .content p.study-diagram {
     width: 100%;
   }
 }
