@@ -188,6 +188,11 @@ A는 루트이고, B·C·D는 A의 자식이다. B의 부모는 A이고, C와 D�
 
 어느 한 노드라도 좌우 서브 트리의 높이 차이가 1을 초과하면 균형 이진 트리가 아니다.
 
+![포화·완전·균형 이진 트리 비교](/assets/img/posts/tree-chapter4/binary-tree-types.png)
+{: .study-diagram }
+
+그림의 ①은 포화 이진 트리, ②는 완전 이진 트리, ③은 균형 이진 트리의 예이다.
+
 💡 **코테 포인트**
 
 균형이 중요한 이유는 트리의 높이와 탐색량이 밀접하게 관련되기 때문이다.
@@ -218,6 +223,9 @@ A는 루트이고, B·C·D는 A의 자식이다. B의 부모는 A이고, C와 D�
 | 부모 | `i // 2` |
 | 왼쪽 자식 | `2 × i` |
 | 오른쪽 자식 | `2 × i + 1` |
+
+![이진 트리의 배열 인덱스 관계](/assets/img/posts/tree-chapter4/binary-tree-array-index.png)
+{: .study-diagram }
 
 따라서 인덱스 3의 노드가 있다면
 
@@ -263,6 +271,9 @@ class BTNode:
 
 즉 하나의 노드는 **data + left + right** 로 구성된다.
 
+![이진 트리 노드의 연결 구조](/assets/img/posts/tree-chapter4/binary-tree-linked-node.png)
+{: .study-diagram }
+
 앞으로 교재의 이진 트리 연산은 이러한 링크 표현법을 기준으로 설명한다. 
 
 ---
@@ -290,6 +301,9 @@ class BTNode:
 - V = 현재 루트 방문
 - L = 왼쪽 서브 트리
 - R = 오른쪽 서브 트리
+
+![전위·중위·후위 순회 결과](/assets/img/posts/tree-chapter4/tree-traversal-orders.png)
+{: .study-diagram }
 
 이다.
 
@@ -486,6 +500,9 @@ def levelorder(root):
 
 Python에서는 보통 큐로 `collections.deque`를 사용한다.
 
+![DFS와 BFS 탐색 방식 비교](/assets/img/posts/tree-chapter4/dfs-bfs-comparison.png)
+{: .study-diagram }
+
 ---
 
 ## 전체 노드의 수 구하기
@@ -633,6 +650,9 @@ def calc_height(n):
 
 반대로 이동해야 하는 방향에 노드가 없다면 **잘못된 모스 코드**라는 것을 알 수 있다.
 
+![모스 코드 결정 트리](/assets/img/posts/tree-chapter4/morse-decision-tree.png)
+{: .study-diagram }
+
 ---
 
 ## 모스 코드 결정 트리 만들기
@@ -701,6 +721,9 @@ def calc_height(n):
 ```
 
 `*`의 왼쪽 자식인 `+`는 `1 + 3`이라는 하나의 수식을 나타내고, 오른쪽 자식인 `/`는 `4 / 2`라는 수식을 나타낸다.
+
+![수식 트리 구조](/assets/img/posts/tree-chapter4/expression-tree.png)
+{: .study-diagram }
 
 ---
 
