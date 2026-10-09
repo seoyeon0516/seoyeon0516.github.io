@@ -9,6 +9,9 @@ math: true
 
 ## 하노이의 탑
 
+> **문제 요약**
+> 1번 기둥에 쌓인 n개의 원판을 한 번에 하나씩 3번 기둥으로 옮기는 최소 이동 순서를 구하는 문제이다. 큰 원판을 작은 원판 위에 놓을 수 없으며, 각 이동은 `[출발 기둥, 도착 기둥]` 형태로 기록한다. [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/12946)
+
 [문제 바로가기](https://school.programmers.co.kr/learn/courses/30/lessons/12946)
 
 1. 입력: 원판의 개수 n
@@ -52,6 +55,9 @@ def solution(n):
 ```
 
 ## 괄호 변환
+
+> **문제 요약**
+> `(`와 `)`의 개수는 같지만 짝이 올바르지 않을 수 있는 균형잡힌 괄호 문자열을 주어진 재귀 절차에 따라 올바른 괄호 문자열로 변환하는 문제이다. 문자열을 더 이상 나눌 수 없는 균형잡힌 `u`와 나머지 `v`로 분리하는 과정이 핵심이다. [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
 
 [문제 바로가기](https://school.programmers.co.kr/learn/courses/30/lessons/60058)
 
@@ -133,6 +139,9 @@ def solution(p):
 ```
 
 ## 유사 칸토어 비트열
+
+> **문제 요약**
+> 0단계의 `1`에서 시작해 매 단계마다 1은 `11011`, 0은 `00000`으로 치환하여 만든 비트열에서 구간 `[l, r]`에 포함된 1의 개수를 구하는 문제이다. 전체 비트열을 직접 만들지 않고 각 위치가 0이 되는 구조를 추적해야 한다. [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/148652)
 
 [문제 바로가기](https://school.programmers.co.kr/learn/courses/30/lessons/148652)
 

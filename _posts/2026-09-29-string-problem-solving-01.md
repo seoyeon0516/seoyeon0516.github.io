@@ -9,6 +9,9 @@ math: true
 
 ## 문자열 내 마음대로 정렬하기
 
+> **문제 요약**
+> 문자열 배열과 인덱스 `n`이 주어지면 각 문자열의 n번째 문자를 기준으로 오름차순 정렬하는 문제이다. n번째 문자가 같다면 문자열 전체의 사전순으로 순서를 정한다. [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/12915)
+
 [문제 바로가기](https://school.programmers.co.kr/learn/courses/30/lessons/12915?language=python3)
 
 1. 입력: 문자열로 구성된 리스트, 인덱스 n번째
@@ -77,6 +80,9 @@ def solution(strings, n):
 
 ## [1차] 비밀지도
 
+> **문제 요약**
+> 숫자로 암호화된 두 장의 지도를 겹쳐 원래의 비밀지도를 복원하는 문제이다. 각 숫자를 n자리 이진수로 변환하고, 두 지도 중 하나라도 벽인 칸은 `#`, 두 지도 모두 공백인 칸은 공백으로 표시한다. [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
+
 [문제 바로가기](https://school.programmers.co.kr/learn/courses/30/lessons/17681)
 
 1. 입력: 지도의 한 변 크기 n, 2개의 정수 배열 arr1, arr2
@@ -116,6 +122,9 @@ def solution(n, arr1, arr2):
 
 ## 접미사 배열
 
+> **문제 요약**
+> 문자열의 각 인덱스에서 시작해 끝까지 이어지는 모든 접미사를 만든 뒤, 이를 사전순으로 정렬하여 반환하는 문제이다. 예를 들어 `banana`의 접미사에는 `banana`, `anana`, `nana`, `ana`, `na`, `a`가 있다. [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/181909)
+
 [문제 바로가기](https://school.programmers.co.kr/learn/courses/30/lessons/181909)
 
 1. 입력: 문자열 my_string
@@ -151,6 +160,9 @@ def solution(my_string):
 슬라이싱 + range + 리스트 컴프리헨션 + sorted
 
 ## 문자열 묶기
+
+> **문제 요약**
+> 문자열 배열의 원소를 길이가 같은 문자열끼리 묶었을 때 가장 많은 문자열이 포함된 그룹의 크기를 구하는 문제이다. 문자열의 내용이 아닌 길이별 등장 횟수를 세는 것이 핵심이다. [공식 문제](https://school.programmers.co.kr/learn/courses/30/lessons/181855)
 
 [문제 바로가기](https://school.programmers.co.kr/learn/courses/30/lessons/181855)
 
