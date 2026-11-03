@@ -13,7 +13,7 @@ math: true
 
 ## 1. 모의고사
 
-[프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/42840?language=python3)
+[프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/42840?language=python3){:target="_blank" rel="noopener noreferrer"}
 
 ### 입력과 출력을 한 문장으로 적기
 
@@ -74,7 +74,7 @@ def solution(answers):
 
 ## 2. 카펫
 
-[프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/42842?language=python3)
+[프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/42842?language=python3){:target="_blank" rel="noopener noreferrer"}
 
 ### 입력과 출력을 한 문장으로 적기
 
@@ -119,7 +119,7 @@ def solution(brown, yellow):
 
 ## 3. 순위 검색
 
-[프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/72412?language=python3)
+[프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/72412?language=python3){:target="_blank" rel="noopener noreferrer"}
 
 이 문제는 앞의 두 문제보다 어렵다. 처음에는 **단순한 방법을 떠올리고, 왜 입력 크기 때문에 개선이 필요한지** 이해하는 것부터 시작한다.
 
@@ -190,7 +190,7 @@ def solution(info, query):
 
 ## 4. 입국심사
 
-[프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/43238?language=python3)
+[프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/43238?language=python3){:target="_blank" rel="noopener noreferrer"}
 
 이 문제는 Lv.3 도전 문제다. 먼저 코드를 완성하는 것보다 **어떤 값에 이진 탐색을 적용할지** 생각해 본다.
 
