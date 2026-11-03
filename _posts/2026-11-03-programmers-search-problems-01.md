@@ -15,6 +15,9 @@ math: true
 
 [프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/42840?language=python3){:target="_blank" rel="noopener noreferrer"}
 
+> **문제 요약**
+> 세 수포자는 각자 정해진 숫자 패턴을 반복해 답을 찍는다. 실제 정답과 비교해 가장 많이 맞힌 사람의 번호를 반환한다. 최고 점수가 같다면 해당 번호를 모두 오름차순으로 반환한다.
+
 ### 입력과 출력을 한 문장으로 적기
 
 정답 배열 `answers`를 입력받아 **가장 많이 맞힌 수포자의 번호**를 배열로 반환한다. 여러 명이면 번호를 오름차순으로 반환한다.
@@ -76,6 +79,9 @@ def solution(answers):
 
 [프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/42842?language=python3){:target="_blank" rel="noopener noreferrer"}
 
+> **문제 요약**
+> 테두리 한 줄은 갈색, 안쪽은 노란색인 직사각형 카펫이 있다. 두 색의 칸 수만 주어졌을 때 카펫의 가로와 세로 길이를 구한다.
+
 ### 입력과 출력을 한 문장으로 적기
 
 갈색 칸 수 `brown`과 노란색 칸 수 `yellow`를 입력받아 **카펫의 가로, 세로 길이**를 배열로 반환한다.
@@ -120,6 +126,9 @@ def solution(brown, yellow):
 ## 3. 순위 검색
 
 [프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/72412?language=python3){:target="_blank" rel="noopener noreferrer"}
+
+> **문제 요약**
+> 지원자마다 언어·직군·경력·음식·점수가 주어진다. 검색 조건에서 `-`는 해당 항목을 따지지 않는다는 뜻이다. 각 질문에 대해 조건을 만족하고 기준 점수 이상을 받은 지원자가 몇 명인지 구한다.
 
 이 문제는 앞의 두 문제보다 어렵다. 처음에는 **단순한 방법을 떠올리고, 왜 입력 크기 때문에 개선이 필요한지** 이해하는 것부터 시작한다.
 
@@ -191,6 +200,9 @@ def solution(info, query):
 ## 4. 입국심사
 
 [프로그래머스 문제 보기](https://school.programmers.co.kr/learn/courses/30/lessons/43238?language=python3){:target="_blank" rel="noopener noreferrer"}
+
+> **문제 요약**
+> 여러 심사관이 각각 다른 시간에 한 명씩 심사를 마친다. 기다리는 사람 모두가 심사를 마칠 수 있는 가장 짧은 시간을 구한다.
 
 이 문제는 Lv.3 도전 문제다. 먼저 코드를 완성하는 것보다 **어떤 값에 이진 탐색을 적용할지** 생각해 본다.
 
